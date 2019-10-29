@@ -1,11 +1,10 @@
-// @format
+# Hash Tables
 
-/*
-Hash Tables
 hash table is a data structure that maps keys to values for highly efficient lookup
-*/
 
-const hash = (key, size) => {
+```
+const hash = (key,
+    size) => {
   let hashedKey = 0;
   for (let i = 0; i < key.length; i++) {
     hashedKey += key.charCodeAt(i);
@@ -40,4 +39,4 @@ class HashTable {
     return this.buckets[idx].get(key);
   }
 }
-
+```
