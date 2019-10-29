@@ -2,6 +2,7 @@
 
 hash table is a data structure that maps keys to values for highly efficient lookup
 
+## Node JS Code Sample
 ```
 const hash = (key,
     size) => {
@@ -40,3 +41,4 @@ class HashTable {
   }
 }
 ```
+
