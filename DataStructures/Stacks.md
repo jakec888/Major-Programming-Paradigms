@@ -14,3 +14,29 @@ Recursive Algorithms - sometimes you need to push temporary data onto a stack as
 
 A stack can also be used to implement a recursive algorithm iteratively.
 
+## Node JS Code Sample
+
+```
+class Stack {
+  constructor() {
+    this.storage = {};
+    this.size = 0;
+  }
+
+  push(element) {
+    this.size++;
+    this.storage[this.size] = element;
+  }
+
+  pop() {
+    let removed = this.storage[this.size];
+    delete this.storage[this.size];
+    this.size--;
+    return removed;
+  }
+
+  peek() {
+    return this.storage[this.size];
+  }
+}
+```

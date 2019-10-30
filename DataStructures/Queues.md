@@ -15,3 +15,28 @@ O(1) time.
 Queues are often used is in breadth-first search or in implementing a cache.
 
 A queue can also be implemented with a linked list. In fact, they are essentially the same thing, as long as items are added and removed from opposite sides.
+
+## Node JS Code Sample
+
+```
+class Queue {
+  constructor() {
+    this.storage = {};
+    this.head = 0;
+    this.tail = 0;
+  }
+
+  enqueue(element) {
+    this.storage[this.tail] = element;
+    this.tail++;
+  }
+
+  dequeue() {
+    let removed = this.storage[this.head];
+    delete this.storage[this.head];
+    this.head++;
+    return removed;
+  }
+}
+
+```
