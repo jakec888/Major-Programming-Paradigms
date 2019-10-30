@@ -12,3 +12,6 @@ O(N) - Linear
 
 O(N^2) - Quadratic
 
+# When?
+
+Big O notation is used in computer science to describe the performance or complexity of an algorithm. Actually Big O notation is special symbol that tells you how fast an algorithm is.
